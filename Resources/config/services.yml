@@ -1,0 +1,5 @@
+services:
+    we_code_pixels_premailer.premailer:
+        class: WeCodePixels\PremailerBundle\Premailer
+        scope: prototype
+        arguments: [%we_code_pixels_premailer.bin%]
