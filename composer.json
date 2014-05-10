@@ -1,6 +1,8 @@
 {
     "name": "wecodepixels/premailer-bundle",
-    "description": "Symfony2 bundle for Premailer",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle for Premailer",
+    "keywords": ["email", "css", "inline"],
     "require": {
         "php": ">=5.3.0"
     },
