@@ -1,10 +1,10 @@
 # Premailer Bundle
 
-This is a Symfony2 bundle for the [Premailer](https://github.com/premailer/premailer/) project. It uses the [Premailer CLI](https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage) (command line interface).
+This is a Symfony2 bundle for the [Premailer](https://github.com/premailer/premailer/) project that uses the [Premailer CLI](https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage) (command line interface).
 
 ## Prerequisites
 
-You will have to install the [Premailer gem](https://github.com/premailer/premailer/#installation) as per the official instructions. At the time of writing, the works properly on a Ubuntu 12.04 LTS installation:
+You will have to install the [Premailer gem](https://github.com/premailer/premailer/#installation) as per the official instructions. At the time of writing, the following snippet works properly on a Ubuntu 12.04 LTS installation:
 
 ```bash
 sudo apt-get install ruby-dev
@@ -59,7 +59,7 @@ we_code_pixels_premailer:
     bin: /usr/bin/premailer
 ```
 
-As a tip, you can locate your **premailer** binary by executing ```bash where premailer``` inside your console.
+As a tip, you can locate your **premailer** binary by executing `where premailer` inside your console.
 
 ## Usage
 
@@ -72,7 +72,7 @@ $premailer->setRemoveClasses(true);
 $htmlWithInlinedCss = $premailer->execute($html);
 ```
 
-There are a few more setters that are directly linked to the [Premailer CLI options](https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage):
+There are a few more setters available that are directly linked to the [Premailer CLI options](https://github.com/premailer/premailer/wiki/Premailer-Command-Line-Usage):
 
 * setMode
 * setBaseUrl
